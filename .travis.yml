@@ -1,0 +1,11 @@
+language:
+    bash
+
+install:
+    git clone --recurse-submodules https://github.com/joyance/myconf.git ~/.myconf
+
+script:
+    sh ~/.myconf/unix/setup.sh
+
+notifications:
+    email: false
